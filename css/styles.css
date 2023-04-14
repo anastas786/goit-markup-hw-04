@@ -1,0 +1,590 @@
+
+/**
+  |============================
+  | Colors
+  |============================
+*/
+
+:root {
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey: #2e2f42;
+  --white: #ffffff;
+  --dairy: #fcfcfc;
+
+
+/**
+  |============================
+  | Fonts
+  |============================
+*/
+  --primary-font: Roboto, sans-serif;
+  --secodary-font: Raleway, sans-serif;
+  
+  /**
+    |============================
+    | Text colors
+    |============================
+  */
+  --main-txt-cl: #434455;
+  --light-txt-cl: #2e2f42;
+  --accent-txt-cl:#4d5ae5;
+  --navi-focus-cl:#404BBF;
+  --mail-txt-cl: #434455;
+  --white-txt-cl: #ffffff;
+  --footer-txt-cl:#f4f4fd;
+  /**
+    |============================
+    | BG Colors
+    |============================
+  */
+
+  --background: #2e2f42;
+  --background-btn:#4d5ae5;
+  --bck-clr-main:#ffffff;
+
+
+  /**
+    |============================
+    | Color bottom
+    |============================
+  */
+  --btm-border:#e7e9fc;
+
+  /**
+    |============================
+    | Others
+    |============================
+  */
+
+  --indent:24px
+}
+
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+/* RESET  start*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.img{
+  display: block;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits {padding-bottom: 120px;
+}
+
+.list{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.decoration{
+  text-decoration: none;
+}
+.link{
+  text-decoration: none;
+}
+
+.adress-header{
+  font-style: normal
+}
+/* Reset end */
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/**
+  |============================
+  | Body section
+  |============================
+*/
+
+.body{
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--main-txt-cl);
+  background-color: var(--bck-clr-main);
+
+}
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+
+.header-container{
+  display: flex;
+  align-items: center;
+}
+
+
+.header-web {
+margin-right: 76px;
+font-family: "Raleway", sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--accent-txt-cl);
+}
+
+.header-studio {
+  color: var(--light-txt-cl);
+}
+
+.header-link-studio {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--light-txt-cl);
+  font-family: var(--secodary-font);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.header-list {
+  border-bottom: 1px solid #e7e9fc;
+  gap: 40px;
+  display:flex;
+  align-items: center;
+}
+
+.header-nav{
+ display:flex;
+ align-items: center;
+ margin-right: auto
+}
+
+.header-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-txt-cl);
+
+}
+.header-link:hover{
+  color: #404bbf;
+}
+.header-link:focus{
+  color:#404bbf;
+}
+
+.adress {
+display: flex;
+gap: 40px;
+}
+
+
+.adress-mail-end {
+  margin-right: 0;
+}
+
+
+.adress-mail {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+.adress-mail:hover{
+  color: #404bbf;
+}
+.adress-mail:focus{
+  color: #404bbf;
+}
+
+
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+
+.hero {
+padding-top: 188px;
+padding-bottom: 188px;
+background-color: var(--background);
+margin-left: auto;
+margin-right: auto;
+}
+
+.hero-title {
+max-width: 496px;
+font-size: 56px;
+line-height: 1.07;
+text-align: center;
+letter-spacing: 0.02em;
+color: #ffffff;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 48px;
+}
+
+.hero-btn {
+margin: auto;
+display: block;
+min-width: 169px;
+height: 56px;
+border-radius: 4px;
+padding: 16px 32px;
+background-color: #4D5AE5;
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+border: none;
+color: #ffffff;
+cursor: pointer;
+}
+
+.hero-btn:focus{
+background-color: #404BBF;
+}
+.hero-btn:hover{
+  background-color: #404BBF;
+}
+
+/**
+  |============================
+  | Benefits section
+  |============================
+*/
+
+.benefits-item {
+width: calc((100% - 72px) / 4);
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+}
+
+.benefits-titles {
+}
+
+.benefits-title {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--light-txt-cl);
+}
+
+.benefits-text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+font-family: var(--primary-font);
+color: var(--main-txt-cl);
+}
+
+
+
+/**
+  |============================
+  | What are we doing section
+  Images
+  |============================
+*/
+
+.img-section {
+  display: flex;
+  gap: 24px;
+}
+
+.img-section-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--light-txt-cl);
+}
+
+.img-section-item {}
+
+.img-section-img {}
+
+
+/**
+  |============================
+  | Our team section
+  |============================
+*/
+
+.section-team {
+  background-color:#F4F4FD ;
+}
+
+.team-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--light-txt-cl);
+}
+
+.team-list {
+display: flex;
+gap: 24px;
+}
+
+.team-name {
+padding: 32px 16px;
+border-radius: 0px 0px 4px 4px;
+}
+
+
+.team-item {
+background-color: #FFFFFF;
+}
+
+.team-img {}
+
+.team-headline {
+margin-bottom: 8px;
+text-align: center;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--light-txt-cl);
+}
+
+.team-text {
+text-align: center;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--main-txt-cl);
+}
+
+/**
+  |============================
+  | Footer 
+  |============================
+*/
+.footer {
+  padding: 100px 0;
+  background-color: var(--background);
+}
+
+.footer-web {
+margin-bottom: 16px;
+display: inline-block;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.16;
+color: var(--accent-txt-cl);
+font-family: var(--secodary-font);
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.footer-studio {
+font-weight: 800;
+font-size: 18px;
+line-height: 1.16;
+color:var(--footer-txt-cl);
+font-family:var(--secodary-font);
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.footer-text {
+letter-spacing: 0.02em;
+width: 264px;
+font-size: 16px;
+line-height: 1.2;
+font-family:var(--primary-font);
+color: var(--footer-txt-cl);
+}
+
+
+
+/**
+  |============================
+  | Portfolio page
+  |============================
+*/
+
+/**
+  |============================
+  | Header
+  |============================
+*/
+
+
+.adress-mail:hover {
+  color: #404bbf;
+}
+
+.adress-mail:focus {
+  color: #404bbf;
+}
+
+.adress-tel {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+
+.adress-tel:hover {
+  color: #404bbf;
+}
+
+.adress-tel:focus {
+  color: #404bbf;
+}
+
+/**
+  |============================
+  | Buttons section
+  |============================
+*/
+.buttons-menu {
+  padding: 96px 0 120px;
+}
+
+.buttons-menu-list {
+justify-content: center;
+margin-bottom: 72px;
+display: flex;
+gap: 24px;
+}
+
+.buttons-menu-item {
+}
+
+.buttons-menu-title {}
+
+.buttons-menu-btn {
+  min-width: 69px;
+  min-height: 48px;
+  padding: 12px 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid var(--btm-border);
+  letter-spacing: 0.04em;
+  color: var(--accent-txt-cl);
+  background-color: var(--footer-txt-cl);
+  cursor: pointer;
+}
+
+.buttons-menu-btn:hover {
+border: 1px solid transparent;
+color: #FFFFFF;
+}
+
+.buttons-menu-btn:focus {
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+
+.buttons-menu-btn:hover {
+background-color:#404BBF;
+}
+
+.buttons-menu-btn:focus {
+  background-color: #404BBF;
+}
+
+
+
+/**
+  |============================
+  | Images sectiom
+  |============================
+*/
+
+.images-list {
+display: flex;
+gap: var(--indent);
+flex-wrap: wrap;
+row-gap: 48px
+}
+
+.images-item {
+width: calc((100% - 48px) / 3);
+}
+
+.images-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+
+.images-title {
+margin-bottom: 8px;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: var(--light-txt-cl);
+}
+
+.images-text {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--main-txt-cl);
+}
