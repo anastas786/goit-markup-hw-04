@@ -407,9 +407,14 @@ border-radius: 0px 0px 4px 4px;
 
 .team-item {
 background-color: #FFFFFF;
+box-shadow: 1px 0px 2px rgba(46, 47, 66, 0.08),1px 0px 1px rgba(46, 47, 66, 0.16),6px 0px 1px rgba(46, 47, 66, 0.08);
+
 }
 
-.team-img {}
+.team-img:hover,
+.team-img:focus{
+box-shadow: 1px 0px 2px rgba(46, 47, 66, 0.08), 1px 0px 1px rgba(46, 47, 66, 0.16), 6px 0px 1px rgba(46, 47, 66, 0.08);
+}
 
 .team-headline {
 margin-bottom: 8px;
@@ -454,7 +459,7 @@ margin-bottom: 8px;
 .socials-link:hover,
 
 .socials-link:focus {
-background-color:var(--navi-focus-cl);
+background-color:#31d0aa;
 }
 
 .socials-icon {
@@ -489,11 +494,26 @@ margin-bottom: 72px;
 display: flex;
 align-items: center;
 justify-content: space-around;
-gap: 24px;
 }
 
-.customers-link {  
+
+.customers-link { 
+  display: flex;
+  width: 168px;
+  height: 88px;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 1px;
+  border-color:#8e8f99;
+  
 }
+
+.customers-link:hover,
+.customers-link:focus {
+color:var(--navi-focus-cl) ;
+}
+
 
 .customers-icon {
 
@@ -547,6 +567,13 @@ line-height: 1.2;
 font-family:var(--primary-font);
 color: var(--footer-txt-cl);
 }
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
@@ -602,6 +629,7 @@ display: flex;
 gap: 24px;
 }
 
+
 .buttons-menu-item {
 }
 
@@ -636,14 +664,23 @@ color: #FFFFFF;
 
 .buttons-menu-btn:hover {
 background-color:#404BBF;
+
 }
 
 .buttons-menu-btn:focus {
   background-color: #404BBF;
+
 }
+.buttons-menu-btn:focus {
+box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12),
+1px 0px 2px rgba(0, 0, 0, 0.08),
+1px 0px 3px rgba(0, 0, 0, 0.1);}
 
-
-
+.buttons-menu-btn:hover {
+  box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.12),
+    1px 0px 2px rgba(0, 0, 0, 0.08),
+    1px 0px 3px rgba(0, 0, 0, 0.1);
+}
 /**
   |============================
   | Images sectiom
