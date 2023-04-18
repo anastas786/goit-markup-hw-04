@@ -477,6 +477,9 @@ margin-bottom: 8px;
   justify-content: center;
   }
 
+.socials-icon {
+  fill:var(--footer-txt-cl);
+}
 
 .socials-link:hover {
   background-color: #404bbf;
@@ -556,11 +559,8 @@ color:var(--navi-focus-cl) ;
 
 .customers-icon {
 fill: currentColor;
-
 } 
-
 .customers-logo {
-
 }
 
 
