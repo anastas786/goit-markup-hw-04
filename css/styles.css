@@ -60,6 +60,14 @@
 
   /**
     |============================
+    | Customers icon
+    |============================
+  */
+--cust-icon:#8e8f99;
+
+
+  /**
+    |============================
     | Others
     |============================
   */
@@ -157,6 +165,7 @@ margin: 0;
 .header-container{
   display: flex;
   align-items: center;
+  
 }
 
 
@@ -186,10 +195,11 @@ color: var(--accent-txt-cl);
 }
 
 .header-list {
-  border-bottom: 1px solid #e7e9fc;
-  gap: 40px;
-  display:flex;
-  align-items: center;
+border-bottom: 1px solid #e7e9fc;
+gap: 40px;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+display:flex;
+align-items: center;
 }
 
 .header-nav{
@@ -253,6 +263,8 @@ max-height: 600px;
 padding-top: 188px;
 padding-bottom: 188px;
 background-color: var(--background);
+background-position: center;
+background-size: cover;
 background-repeat: no-repeat;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/section1/people-office.jpg);
 margin-left: auto;
@@ -305,7 +317,9 @@ background-color: #404BBF;
 .icons {
 display: flex;
 align-items: center;
-justify-content: space-around;
+justify-content: center;
+border-radius: 4px;
+margin-bottom: 8px;
 width: 264px;
 height: 112px;
 background-color: #F4F4FD;
@@ -400,13 +414,14 @@ gap: 24px;
 }
 
 .team-name {
-padding: 32px 16px;
+padding: 32px 0px;
 border-radius: 0px 0px 4px 4px;
 }
 
 
 .team-item {
 background-color: #FFFFFF;
+border-radius: 0px 0px 4px 4px;
 box-shadow: 1px 0px 2px rgba(46, 47, 66, 0.08),1px 0px 1px rgba(46, 47, 66, 0.16),6px 0px 1px rgba(46, 47, 66, 0.08);
 
 }
@@ -446,23 +461,34 @@ margin-bottom: 8px;
   gap: 24px;
 }
 
+
+.socials-item {
+  width: 40px;
+  height: 40px;
+  
+
+}
+
 .socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color:var(--accent-txt-cl);
   border-radius: 50%;
 }
 
-.socials-link:hover,
+.socials-link:hover {
+background-color: #31d0aa;
+}
 
 .socials-link:focus {
-background-color:#31d0aa;
+background-color: #31d0aa;
 }
 
 .socials-icon {
+  fill:var(--footer-txt-cl);
 }
 
 /**
@@ -480,6 +506,7 @@ background-color:#31d0aa;
 font-size: 36px;
 line-height: 1.11;
 text-align: center;
+line-height: 1.1;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--light-txt-cl);
@@ -492,30 +519,38 @@ margin-bottom: 72px;
 
 .customers-item {
 display: flex;
-align-items: center;
-justify-content: space-around;
+gap: 24px;
+width: calc((100% - 120px) / 6);
+height: 88px;
 }
 
 
 .customers-link { 
   display: flex;
-  width: 168px;
-  height: 88px;
+  justify-content: center;
+  color:var(--cust-icon);
+  width: 100%;
+  height: 100%;
   gap: 24px;
   align-items: center;
   justify-content: space-around;
-  border-radius: 1px;
-  border-color:#8e8f99;
+  border: 1px solid #8e8f99;
+  border-radius:4px;
   
 }
 
-.customers-link:hover,
+.customers-link:hover {
+  border-color: #404bbf;
+}
+
 .customers-link:focus {
+border-color: #404bbf;
 color:var(--navi-focus-cl) ;
 }
 
 
 .customers-icon {
+fill: currentColor;
 
 } 
 
@@ -559,20 +594,32 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
+
 .footer-text {
 letter-spacing: 0.02em;
-width: 264px;
+margin-bottom: 16px;
+font-weight: 500;
 font-size: 16px;
-line-height: 1.2;
-font-family:var(--primary-font);
-color: var(--footer-txt-cl);
+line-height: 1.5;
+color:var(--bck-clr-main);
 }
 
 .footer-social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
+
+.socials-list {
+  display: flex;
+  gap: 16px;
+
+}
+
+.social-container {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
+}
+
+
 
 
 
@@ -696,6 +743,16 @@ row-gap: 48px
 
 .images-item {
 width: calc((100% - 48px) / 3);
+}
+
+.images-link {display: block;}
+
+.images-link:hover {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.images-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .images-container {
