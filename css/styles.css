@@ -617,7 +617,7 @@ text-transform: uppercase;
 .footer-text {
 letter-spacing: 0.02em;
 margin-bottom: 16px;
-font-weight: 400;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 color:var(--bck-clr-main);
@@ -634,6 +634,7 @@ color:var(--bck-clr-main);
 
 .footer-container {
 display: flex;
+align-items: baseline;
 }
 
 .footer-link{
